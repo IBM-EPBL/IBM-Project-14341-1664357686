@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="{{ uri }}/Anime.ico">
+    <link rel="stylesheet" href="{{ uri }}/style.css">
+    <title>VR 7 Hospital</title>
+</head>
+<body>
+    <div class="flex-container">
+        <img id="neco" src="{{ uri }}/cartoon.jpg" alt="burenyuu" type="image/webp">
+        <h1>VR7 hospital</h1>
+	</div>
+	<br>
+    <br>
+    <img src="{{ uri }}/steths.jpg" alt="girl">
+    <p>Hi! You can find the nearest hospital branches by using our Chat Assistant :)</p>
+    <br>
+    <br>
+    <div class="flex-container">
+        <img id="doctor" src="{{ uri }}/strange.jpg" alt="doctor" type="image/jpeg">
+        <img id="nurse" src="{{ uri }}/cartoon.jpg" alt="nurse" type="image/webp">  
+    </div>
+    <p>We have the best in class nurses and doctors dealing with wide ranges and demography of patients with the utmost care we can provide!</p>
+    <br>
+    <br>
+    <p>CopyLeft 2022 VR-7 Corporation Ltd.</p>
+	
+    <script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "d3f8788f-da3a-4748-8366-b33d94d9f9e4", // The ID of this integration.
+    region: "jp-tok", // The region your integration is hosted in.
+    serviceInstanceID: "4c66e460-a829-4fbb-9bde-aa4d39d909d1", // The ID of your service instance.
+    onLoad: function(instance) { instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
+   
+
+</body>
+</html>
+	
