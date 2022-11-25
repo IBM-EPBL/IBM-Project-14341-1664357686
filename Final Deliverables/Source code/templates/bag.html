@@ -1,0 +1,105 @@
+<!DOCTYPE html>   
+<html>   
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<title>Order here</title>  
+<style>   
+Body {  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-image: url("https://www.logicinbound.com/wp-content/uploads/2018/01/shutterstock_779835055-1024x737.jpg");
+	width900vw;
+	height:90vh; 
+	
+}  
+button {   
+       background-color: #4CAF50;   
+       width: 100%;  
+        color: orange;   
+        padding: 15px;   
+        margin: 10px 0px;   
+        border: none;   
+        cursor: pointer;   
+         }   
+ form {   
+        border: 3px solid #f1f1f1;  
+	width: 50%;
+	margin: 0 auto;
+	border-radius: 30px;
+ 
+    }   
+ input[type=text], input[type=password]{   
+        width: 100%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px solid green;   
+        box-sizing: border-box;   
+    }  
+ button:hover {   
+        opacity: 0.7;   
+    }   
+   
+        
+     
+ .container {   
+        padding: 25px;   
+        background-color: lightblue; 
+	border-radius: 30px;
+}
+.div1
+{
+	
+	float: left;
+	width: 40%;
+	padding: 25px;   
+        background-color: lightblue; 
+	border-radius: 30px;
+	
+}
+.div2
+{
+	width: 50%;
+	float: right;
+}
+	
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}	 
+       
+</style>   
+</head>    
+<body>    
+<div class="div1">
+<div class="pic">
+<center><h1 style="background-color:orange;">Bag<h1></center>
+<br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img  src="https://fashion-bucket.s3.jp-tok.cloud-object-storage.appdomain.cloud/bag.jpeg"    width="300" height="300" alt="your product">
+</div>
+</div>
+<div class="div2">  
+  
+    <form action="/bag" method="post">  
+         <div class="container">
+            <label>Username : </label>   
+            <input type="text" placeholder="Enter Username" name="name" required>  
+            <label>quantity : </label>   
+            <input type="text" placeholder="number of quantity " name="quantity" required>  
+		<label>mobile : </label>   
+            <input type="text" placeholder="mobile number " name="mobile" required> 
+		<label>your address : </label>   
+            <input type="text" placeholder="address" name="address" required>
+		<label>email : </label>   
+            <input type="text" placeholder="email" name="mail" required>     
+            <button type="submit">Order</button>      
+    	</div>
+    </form>
+	<div class="msg">{{ msg }}</div><br>
+	<center><a href="/main" target="_blank">Continue Shooping</a></center>
+	</div>     
+</body>     
+</html> 
